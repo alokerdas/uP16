@@ -1,0 +1,66 @@
+/*-------------------------------------------------------------------------------------
+_____________________________________________________________________________________
+
+SPA (Skip if AC is positive), SNA (Skip if AC is negative), SZA(Skip if AC is Zero) 
+SZE (Skip if E is Zero), INC(Increment AC)
+______________________________________________________________________________________
+
+INPUTS : 1234
+       : F378  (For AC Positive and E = 1)
+
+       : 0234
+       : F378  (For AC Negative and E = 0)
+
+OUTPUTS: 1140 Testbench RESET=0 E=0 DATA_OUTR=00 AC=0001001000110100
+         1420 Testbench RESET=0 E=1 DATA_OUTR=00 AC=0000010110101100
+         3540 Testbench RESET=0 E=1 DATA_OUTR=00 AC=0000000000000000
+         4060 Testbench RESET=0 E=1 DATA_OUTR=00 AC=0000000000000001
+         7000 Memory [11] = 05ac
+         7000 Memory [12] = xxxx
+         7000 Memory [13] = 05ac
+         7000 Memory [14] = 05ac
+         7000 Memory [15] = 05ac
+         7000 Memory [16] = xxxx
+         7000 Memory [17] = 0001     (For AC Positive, E = 1 and AC = Zero)
+
+         1140 Testbench RESET=0 E=0 DATA_OUTR=00 AC=0000001000110100
+         1420 Testbench RESET=0 E=0 DATA_OUTR=00 AC=1111010110101100
+         3820 Testbench RESET=0 E=0 DATA_OUTR=00 AC=1111010110101101
+         7000 Memory [11] = f5ac
+         7000 Memory [12] = f5ac
+         7000 Memory [13] = xxxx
+         7000 Memory [14] = f5ac
+         7000 Memory [15] = xxxx
+         7000 Memory [16] = f5ac
+         7000 Memory [17] = f5ad     (For AC Positive and E = 0)
+
+-----------------------------------------------------------------------------------------*/
+
+@000      //    Memory 000
+2020      //    LDA  020
+1021      //    ADD  021
+3022      //    STA  022
+
+7010      //    SPA
+B030      //    STAI  030
+7008      //    SNA
+B031      //    STAI  031
+
+7004      //    SZA
+B032      //    STAI  032
+7002      //    SZE
+B033      //    STAI  033
+
+7800      //    CLA    (For 2nd Time Block This Line)
+7004      //    SZA
+B034      //    STAI  034
+
+7020      //    INC
+B035      //    STAI  035
+
+7001      //    HLT
+
+@020      //    Memory 020
+1234      //    Data   1234
+F378      //    Data   F378
+

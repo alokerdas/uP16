@@ -1,0 +1,38 @@
+/*-------------------------------------------------------------------------------------
+_____________________________________________________________________________________
+
+CIR (Circulate Right E andr AC) & CIL (Circulate Left E andr AC)
+______________________________________________________________________________________
+
+INPUTS : 1234
+       : 7373
+
+OUTPUTS: 1420 Testbench RESET=0 E=0 DATA_OUTR=00 AC=1000010110100111---(Original Data)
+         1900 Testbench RESET=0 E=1 DATA_OUTR=00 AC=0100001011010011---Shift Right With E
+         2380 Testbench RESET=0 E=1 DATA_OUTR=00 AC=1010000101101001---Shift Right With E
+         2900 Testbench RESET=0 E=1 DATA_OUTR=00 AC=0001001000110100
+         3180 Testbench RESET=0 E=0 DATA_OUTR=00 AC=1000010110100111---(Original Data)      
+         3420 Testbench RESET=0 E=1 DATA_OUTR=00 AC=0000101101001110---Shift Left With E
+         3900 Testbench RESET=0 E=0 DATA_OUTR=00 AC=0001011010011101---Shift Left With E
+         7000 Memory [10] = a169---Shift Right With E
+         7000 Memory [11] = 42d3---Shift Right With E
+         7000 Memory [12] = 85a7---(Original Data)
+         7000 Memory [13] = 0b4e---Shift Left With E
+         7000 Memory [14] = 169d---Shift Left With E
+         7000 Memory [15] = xxxx
+
+-----------------------------------------------------------------------------------------*/
+
+@000
+2020      //    LDA  020
+1021      //    ADD  021
+3030      //    STA  030
+7080      //    CIR
+3031      //    STA  031
+
+7040      //    CIL
+7001      //    HLT
+
+@020      //    Memory 020
+1234      //    Data   1234
+7373      //    Data   7373

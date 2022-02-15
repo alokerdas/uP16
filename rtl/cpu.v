@@ -32,8 +32,8 @@ module cpu (clk, addr, data, en_inp, en_out, rdwr, en, ack, rst, keyboard, displ
 // For debug purpose
    initial
    begin
-      $display($time,"                 e  ac   t   s  ar  dr  pc  ir");
-      $monitor($time," THE ANSWER IS = %b %h %h %b %h %h %h %h",e,ac,t,s,ar,dr,pc,ir);
+      $display($time,"                 e  ac   t   s  ar  dr  pc  ir   disp");
+      $monitor($time," THE ANSWER IS = %b %h %h %b %h %h %h %h %h",e,ac,t,s,ar,dr,pc,ir,display);
    end
 //
 
