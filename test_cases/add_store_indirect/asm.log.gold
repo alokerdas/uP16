@@ -1,27 +1,26 @@
-                   0                 e  ac  t  s  ar  dr  pc  ir disp
-                   0 THE ANSWER IS = x xxxx xx x xxx xxxx xxx xxxx xx
-                  10 THE ANSWER IS = 0 0000 00 x 000 0000 000 0000 xx
-                 210 THE ANSWER IS = 0 0000 01 1 000 0000 000 0000 xx
-                 250 THE ANSWER IS = 0 0000 02 1 000 0000 000 0000 xx
-                 350 THE ANSWER IS = 0 0000 04 1 000 0000 000 a040 xx
-                 450 THE ANSWER IS = 0 0000 08 1 040 0000 000 a040 xx
-                 550 THE ANSWER IS = 0 0000 10 1 050 0000 000 a040 xx
-                 650 THE ANSWER IS = 0 0000 20 1 050 1234 000 a040 xx
-                 750 THE ANSWER IS = 0 1234 01 1 050 1234 001 a040 xx
-                 850 THE ANSWER IS = 0 1234 02 1 001 1234 001 a040 xx
-                 950 THE ANSWER IS = 0 1234 04 1 001 1234 001 9041 xx
-                1050 THE ANSWER IS = 0 1234 08 1 041 1234 001 9041 xx
-                1150 THE ANSWER IS = 0 1234 10 1 051 1234 001 9041 xx
-                1250 THE ANSWER IS = 0 1234 20 1 051 5678 001 9041 xx
-                1350 THE ANSWER IS = 0 68ac 01 1 051 5678 002 9041 xx
-                1450 THE ANSWER IS = 0 68ac 02 1 002 5678 002 9041 xx
-                1550 THE ANSWER IS = 0 68ac 04 1 002 5678 002 b042 xx
-                1650 THE ANSWER IS = 0 68ac 08 1 042 5678 002 b042 xx
-                1750 THE ANSWER IS = 0 68ac 10 1 012 5678 002 b042 xx
-                1850 THE ANSWER IS = 0 68ac 01 1 012 5678 003 b042 xx
-                1950 THE ANSWER IS = 0 68ac 02 1 003 5678 003 b042 xx
-                2050 THE ANSWER IS = 0 68ac 04 1 003 5678 003 7001 xx
-                2150 THE ANSWER IS = 0 68ac 08 1 001 5678 003 7001 xx
-                2250  Program Is Terminated.  AC = 68ac
-cpu_behv.v:30: $finish called at 2250 (1s)
-                2250 THE ANSWER IS = 0 68ac 00 0 001 5678 004 7001 xx
+                   0                 e  ac  t  ar  dr   pc  ir  disp
+                   0 THE ANSWER IS = x xxxx xx xxx xxxx xxx xxxx xx
+                  10 THE ANSWER IS = 0 0000 00 000 0000 000 0000 xx
+                 210 THE ANSWER IS = 0 0000 01 000 0000 000 0000 xx
+                 250 THE ANSWER IS = 0 0000 02 000 0000 000 0000 xx
+                 350 THE ANSWER IS = 0 0000 04 000 0000 000 a040 xx
+                 450 THE ANSWER IS = 0 0000 08 040 0000 000 a040 xx
+                 550 THE ANSWER IS = 0 0000 10 050 0000 000 a040 xx
+                 650 THE ANSWER IS = 0 0000 20 050 1234 000 a040 xx
+                 750 THE ANSWER IS = 0 1234 01 050 1234 001 a040 xx
+                 850 THE ANSWER IS = 0 1234 02 001 1234 001 a040 xx
+                 950 THE ANSWER IS = 0 1234 04 001 1234 001 9041 xx
+                1050 THE ANSWER IS = 0 1234 08 041 1234 001 9041 xx
+                1150 THE ANSWER IS = 0 1234 10 051 1234 001 9041 xx
+                1250 THE ANSWER IS = 0 1234 20 051 5678 001 9041 xx
+                1350 THE ANSWER IS = 0 68ac 01 051 5678 002 9041 xx
+                1450 THE ANSWER IS = 0 68ac 02 002 5678 002 9041 xx
+                1550 THE ANSWER IS = 0 68ac 04 002 5678 002 b042 xx
+                1650 THE ANSWER IS = 0 68ac 08 042 5678 002 b042 xx
+                1750 THE ANSWER IS = 0 68ac 10 012 5678 002 b042 xx
+                1850 THE ANSWER IS = 0 68ac 01 012 5678 003 b042 xx
+                1950 THE ANSWER IS = 0 68ac 02 003 5678 003 b042 xx
+                2050 THE ANSWER IS = 0 68ac 04 003 5678 003 7001 xx
+                2150  Program Is Terminated.  AC = 68ac
+cpu_behv.v:31: $finish called at 2150 (1s)
+                2150 THE ANSWER IS = 0 68ac 08 001 5678 003 7001 xx
