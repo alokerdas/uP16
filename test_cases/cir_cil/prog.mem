@@ -28,7 +28,7 @@ OUTPUTS: 1420 Testbench RESET=0 E=0 DATA_OUTR=00 AC=1000010110100111---(Original
 1021      //    ADD  021
 3030      //    STA  030
 7080      //    CIR
-3031      //    STA  031
+3030      //    STA  031
 
 7040      //    CIL
 7001      //    HLT

@@ -22,7 +22,7 @@ OUTPUTS: 1140 Testbench RESET=0 E=0 DATA_OUTR=00 AC=1111111111111111
 @000
 2012      //    LDA  012
 6010      //    ISZ  010
-3015      //    STA  015
+3014      //    STA  015
 
 E040      //    ISZI  040
 B041      //    STAI  041

@@ -22,7 +22,6 @@ OUTPUTS: 2500 Testbench RESET=0 E=0 DATA_OUTR=00 AC=0001001000110000
 
 @020      //    Memory 020
 0000      //    Store Return Address
-0000      //    Store Return Address
 8051      //    ANDI  051
 B052      //    STAI  052
 C020      //    BUNI  020

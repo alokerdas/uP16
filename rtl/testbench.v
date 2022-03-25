@@ -12,7 +12,7 @@ module testbench;
   reg [7:0] keyboard;
 
   cpu cpu1 (.clk(ck), .addr(adr), .data(dat), .en_inp(intr_in), .en_out(intr_out), .rdwr(rw), .en(n), .ack(ak), .rst(rs), .keyboard(keyboard), .display(display));
-  memory mem1 (.addr(adr), .data(dat), .rdwr(rw), .en(n), .ack(ak));
+  memory mem1 (.clock(ck), .addr(adr), .data(dat), .rdwr(rw), .en(n), .ack(ak));
                                                      /* Explicite association */
   always
     #50 ck = ~ck;
@@ -22,7 +22,7 @@ module testbench;
     $dumpfile("up1.vcd");
     $dumpvars;
   end 
-   */
+  */
 
   initial begin
     ck = 1'b0;
