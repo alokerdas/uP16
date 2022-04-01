@@ -36,5 +36,5 @@
                 3450 THE ANSWER IS = 0 8577 002 006 7373 007 3040 a7
                 3550 THE ANSWER IS = 0 8577 004 006 7373 007 3040 a7
                 3650  Program Is Terminated.  AC = 8577
-cpu_behv.v:32: $finish called at 3650 (1s)
+testbench.v:16: $finish called at 3650 (1s)
                 3650 THE ANSWER IS = 0 8577 008 006 7373 007 7001 a7

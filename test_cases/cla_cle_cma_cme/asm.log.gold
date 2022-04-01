@@ -39,5 +39,5 @@
                 3750 THE ANSWER IS = 0 0000 002 007 7373 008 7800 xx
                 3850 THE ANSWER IS = 0 0000 004 007 7373 008 7800 xx
                 3950  Program Is Terminated.  AC = 0000
-cpu_behv.v:32: $finish called at 3950 (1s)
+testbench.v:16: $finish called at 3950 (1s)
                 3950 THE ANSWER IS = 0 0000 008 007 7373 008 7001 xx

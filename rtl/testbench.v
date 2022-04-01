@@ -1,5 +1,25 @@
-/*____________________________________________________________________________*/
+module debug (of, accu, fsm, ar, datr, prgctr, instr, lcd, dcod);
+  input of;
+  input [7:0] lcd, dcod;
+  input [10:0] fsm;
+  input [11:0] ar, prgctr;
+  input [15:0] accu, datr, instr;
+// For debug purpose
+  initial begin
+    $display($time,"                 e  ac   t  ar  dr   pc  ir  disp");
+    $monitor($time," THE ANSWER IS = %b %h %h %h %h %h %h %h", of, accu, fsm, ar, datr, prgctr, instr, lcd);
+  end
 
+  always @* begin
+    if (!instr[15] && dcod[7] && fsm[3] && instr[0]) begin
+      $display($time, "  Program Is Terminated.  AC = %h", accu);
+      $finish;
+    end
+  end
+
+endmodule
+
+/*____________________________________________________________________________*/
 ///////////////////////////////*  TEST BENCH  */////////////////////////////////________________________________________________________________________________********************************************************************************
 
 module testbench;
@@ -17,12 +37,12 @@ module testbench;
   always
     #50 ck = ~ck;
 
-/*
+`ifdef DUMP_VCD
   initial begin
     $dumpfile("up1.vcd");
     $dumpvars;
   end 
-  */
+`endif
 
   initial begin
     ck = 1'b0;

@@ -53,5 +53,5 @@
                 5150 THE ANSWER IS = 0 ffff 002 007 0000 008 6012 xx
                 5250 THE ANSWER IS = 0 ffff 004 007 0000 008 6012 xx
                 5350  Program Is Terminated.  AC = ffff
-cpu_behv.v:32: $finish called at 5350 (1s)
+testbench.v:16: $finish called at 5350 (1s)
                 5350 THE ANSWER IS = 0 ffff 008 007 0000 008 7001 xx

@@ -53,5 +53,5 @@
                 5150 THE ANSWER IS = 0 4028 002 004 0004 005 c020 xx
                 5250 THE ANSWER IS = 0 4028 004 004 0004 005 c020 xx
                 5350  Program Is Terminated.  AC = 4028
-cpu_behv.v:32: $finish called at 5350 (1s)
+testbench.v:16: $finish called at 5350 (1s)
                 5350 THE ANSWER IS = 0 4028 008 004 0004 005 7001 xx

@@ -38,5 +38,5 @@
                 3650 THE ANSWER IS = 0 85a7 002 006 7373 007 7040 xx
                 3750 THE ANSWER IS = 0 85a7 004 006 7373 007 7040 xx
                 3850  Program Is Terminated.  AC = 85a7
-cpu_behv.v:32: $finish called at 3850 (1s)
+testbench.v:16: $finish called at 3850 (1s)
                 3850 THE ANSWER IS = 0 85a7 008 006 7373 007 7001 xx

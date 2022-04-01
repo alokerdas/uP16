@@ -23,5 +23,5 @@
                 2150 THE ANSWER IS = 0 1230 002 003 5678 004 3011 xx
                 2250 THE ANSWER IS = 0 1230 004 003 5678 004 3011 xx
                 2350  Program Is Terminated.  AC = 1230
-cpu_behv.v:32: $finish called at 2350 (1s)
+testbench.v:16: $finish called at 2350 (1s)
                 2350 THE ANSWER IS = 0 1230 008 003 5678 004 7001 xx

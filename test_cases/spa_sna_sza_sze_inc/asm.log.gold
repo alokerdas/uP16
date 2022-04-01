@@ -79,5 +79,5 @@
                 7750 THE ANSWER IS = 1 0001 002 010 xxxx 011 b035 xx
                 7850 THE ANSWER IS = 1 0001 004 010 xxxx 011 b035 xx
                 7950  Program Is Terminated.  AC = 0001
-cpu_behv.v:32: $finish called at 7950 (1s)
+testbench.v:16: $finish called at 7950 (1s)
                 7950 THE ANSWER IS = 1 0001 008 010 xxxx 011 7001 xx
