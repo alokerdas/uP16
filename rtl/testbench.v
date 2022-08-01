@@ -24,15 +24,15 @@ endmodule
 
 module testbench;
 
-  wire [15:0] dat;
+  wire [15:0] datin, datut;
   wire [11:0] adr;
-  wire rw,n,ak;;
+  wire rw,n;
   reg ck, rs, intr_in, intr_out;
   wire [7:0] display;
   reg [7:0] keyboard;
 
-  cpu cpu1 (.clk(ck), .addr(adr), .data(dat), .en_inp(intr_in), .en_out(intr_out), .rdwr(rw), .en(n), .ack(ak), .rst(rs), .keyboard(keyboard), .display(display));
-  memory mem1 (.clock(ck), .addr(adr), .data(dat), .rdwr(rw), .en(n), .ack(ak));
+  cpu cpu1 (.clk(ck), .addr(adr), .datain(datut), .dataout(datin), .en_inp(intr_in), .en_out(intr_out), .rdwr(rw), .en(n), .rst(rs), .keyboard(keyboard), .display(display));
+  memory mem1 (.clock(ck), .addr(adr), .datain(datin), .dataout(datut), .rdwr(rw), .en(n));
                                                      /* Explicite association */
   always
     #50 ck = ~ck;
@@ -45,6 +45,8 @@ module testbench;
 `endif
 
   initial begin
+    $readmemh("prog.mem", mem1.mem);
+
     ck = 1'b0;
     #10 rs = 1'b1;
     #200 rs = 1'b0; intr_in = 1; intr_out = 1; keyboard = 8'h77;
