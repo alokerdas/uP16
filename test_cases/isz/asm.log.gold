@@ -52,6 +52,5 @@
                 5050 THE ANSWER IS = 0 ffff 001 012 0000 007 6012 xx
                 5150 THE ANSWER IS = 0 ffff 002 007 0000 008 6012 xx
                 5250 THE ANSWER IS = 0 ffff 004 007 0000 008 6012 xx
-                5350  Program Is Terminated.  AC = ffff
-testbench.v:16: $finish called at 5350 (1s)
                 5350 THE ANSWER IS = 0 ffff 008 007 0000 008 7001 xx
+testbench.v:18: $finish called at 10210 (1s)

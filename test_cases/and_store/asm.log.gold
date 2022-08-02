@@ -22,6 +22,5 @@
                 2050 THE ANSWER IS = 0 1230 001 011 5678 003 3011 xx
                 2150 THE ANSWER IS = 0 1230 002 003 5678 004 3011 xx
                 2250 THE ANSWER IS = 0 1230 004 003 5678 004 3011 xx
-                2350  Program Is Terminated.  AC = 1230
-testbench.v:16: $finish called at 2350 (1s)
                 2350 THE ANSWER IS = 0 1230 008 003 5678 004 7001 xx
+testbench.v:18: $finish called at 10210 (1s)

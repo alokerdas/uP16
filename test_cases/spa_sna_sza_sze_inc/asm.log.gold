@@ -78,6 +78,5 @@
                 7650 THE ANSWER IS = 1 0001 001 xxx xxxx 010 b035 xx
                 7750 THE ANSWER IS = 1 0001 002 010 xxxx 011 b035 xx
                 7850 THE ANSWER IS = 1 0001 004 010 xxxx 011 b035 xx
-                7950  Program Is Terminated.  AC = 0001
-testbench.v:16: $finish called at 7950 (1s)
                 7950 THE ANSWER IS = 1 0001 008 010 xxxx 011 7001 xx
+testbench.v:18: $finish called at 10210 (1s)

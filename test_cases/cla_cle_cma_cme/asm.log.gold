@@ -38,6 +38,5 @@
                 3650 THE ANSWER IS = 0 0000 001 800 7373 007 7800 xx
                 3750 THE ANSWER IS = 0 0000 002 007 7373 008 7800 xx
                 3850 THE ANSWER IS = 0 0000 004 007 7373 008 7800 xx
-                3950  Program Is Terminated.  AC = 0000
-testbench.v:16: $finish called at 3950 (1s)
                 3950 THE ANSWER IS = 0 0000 008 007 7373 008 7001 xx
+testbench.v:18: $finish called at 10210 (1s)

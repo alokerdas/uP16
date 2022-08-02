@@ -35,6 +35,5 @@
                 3350 THE ANSWER IS = 0 8577 001 040 7373 006 3040 a7
                 3450 THE ANSWER IS = 0 8577 002 006 7373 007 3040 a7
                 3550 THE ANSWER IS = 0 8577 004 006 7373 007 3040 a7
-                3650  Program Is Terminated.  AC = 8577
-testbench.v:16: $finish called at 3650 (1s)
                 3650 THE ANSWER IS = 0 8577 008 006 7373 007 7001 a7
+testbench.v:18: $finish called at 10210 (1s)

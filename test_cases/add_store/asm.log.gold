@@ -22,6 +22,5 @@
                 2050 THE ANSWER IS = 0 0016 001 012 000f 003 3012 xx
                 2150 THE ANSWER IS = 0 0016 002 003 000f 004 3012 xx
                 2250 THE ANSWER IS = 0 0016 004 003 000f 004 3012 xx
-                2350  Program Is Terminated.  AC = 0016
-testbench.v:16: $finish called at 2350 (1s)
                 2350 THE ANSWER IS = 0 0016 008 003 000f 004 7001 xx
+testbench.v:18: $finish called at 10210 (1s)
