@@ -3,8 +3,8 @@ module testbench;
   wire [15:0] datin, datut;
   wire [11:0] adr;
   wire [7:0] display;
-  wire rw,n;
-  reg ck, rs, intr_in, intr_out;
+  wire rw,n,intr_out;
+  reg ck, rs, intr_in;
   reg [7:0] keyboard;
 
   initial begin
@@ -12,9 +12,9 @@ module testbench;
     $display($time,"                 e  ac   t  ar  dr   pc  ir  disp");
     $monitor($time," THE ANSWER IS = %b %h %h %h %h %h %h %h", cpu1.e, cpu1.ac, cpu1.t, cpu1.addr, cpu1.dr, cpu1.pc, cpu1.ir, cpu1.display);
 
-    ck = 1'b0;
+    ck = 1'b0; intr_in = 0;
     #10 rs = 1'b1;
-    #200 rs = 1'b0; intr_in = 1; intr_out = 1; keyboard = 8'h77;
+    #200 rs = 1'b0; intr_in = 1; keyboard = 8'h77;
     #10000 $finish;
 /*
       $monitor($time," TEST DISPLAY = %b",display);
